@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nosotros</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'AppAJ/assets/img/messi.jgp' %)" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'AppAJ/css/styles.css' %}" rel="stylesheet" />
+
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/AppAJ/templates/AppAJ/inicio.html ">AJ PINTORES</a>
+
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"  href="trabajos_realizados.html">Trabajos Realizados</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="acerca_de_mi.html">Acerca de mi</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+    
+    
+    
+
 </head>
 <body>
-    nosotros
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <section class="page-section bg-primary text-white mb-0" id="nosotros.html">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Nosotros</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto"><p class="lead">Somos una empresa dedicada a la pintura de obra, nuestra especialidad es pintura en altura, todo tipo de revestimientos plásticos aplicados con llana plástica asi como también el revestimientos proyectado con tolba de aire.</p></div>
+                <div class="col-lg-4 me-auto"><p class="lead">Hemos trabajado en los más prestigiosos barrios Ciudad de Córdoba y sus alrededores, empresas de renombre y hoteles céntricos de nuestra ciudad</p></div>
+            </div>
+            <!-- About Section Button-->
+           
+        </div>
+    </section>
 </body>
 </html>

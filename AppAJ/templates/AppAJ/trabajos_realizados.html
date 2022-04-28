@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    {% load static %}
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabajos Realizados</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'AppAJ/assets/img %)" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'AppAJ/css/styles.css' %}" rel="stylesheet" />
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/AppAJ/templates/AppAJ/inicio.html ">AJ PINTORES
+                <img src="/AppAJ/static/AppAJ/assets/img/monoAJ.jpg" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"  href="trabajos_realizados.html">Trabajos Realizados</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="acerca_de_mi.html">Acerca de mi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+
+   
+         
 </head>
 <body>
-    trabajos realizados
+    <br>
+    <br>
+    <br>
+    
+    <section class="page-section portfolio" id="trabajos_realizados">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Trabajos Realizados</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                
+            </div>
+            <br>
+            <br>
+    <!-- Portfolio Grid Items-->
+    <div class="row justify-content-center">
+        <!-- Portfolio Item 1-->
+        <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hotel Windsor</h2>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum assumenda impedit culpa nobis quia quod, pariatur fugit corrupti, atque nemo laudantium? Quis nulla possimus autem eius similique distinctio impedit fugit!</p>
+                <img class="img-fluid"  src="/AppAJ/static/AppAJ/assets/img/lascano1.jpeg" alt="">
+            </div> 
+        </div>
+        <!-- Portfolio Item 2-->
+        <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabajo 2</h2>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vero eveniet perferendis consequatur soluta eaque esse natus, recusandae beatae mollitia aliquid quo ea culpa itaque modi at tempore excepturi quis!</p>
+                <img class="img-fluid"  src="/AppAJ/static/AppAJ/assets/img/lascano1.jpeg" alt="">
+            </div>
+        </div>
+        <!-- Portfolio Item 3-->
+        <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabajo 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi laboriosam ullam rem voluptatum doloribus architecto similique dolorem temporibus, ut, rerum nostrum, praesentium aspernatur! Quidem esse molestias adipisci aliquam saepe!</p>
+                <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+            </div>
+        </div>
+        <!-- Portfolio Item 4-->
+        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabajo 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nemo dolorem fuga in id tempore eos nihil, totam hic porro dolores soluta culpa quam inventore repellendus. Delectus nisi sunt qui!</p>
+                <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+            </div>
+        </div>
+        <!-- Portfolio Item 5-->
+        <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabajo 5</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta accusamus ut itaque nobis quisquam quam, inventore repudiandae porro eligendi laudantium minima a, quia expedita fuga commodi perspiciatis assumenda animi ea.</p>
+                <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+            </div>
+        </div>
+        <!-- Portfolio Item 6-->
+        <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trabajo 6</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum esse consectetur earum minima hic veritatis autem fuga, laboriosam molestiae atque beatae quis officiis, magnam doloremque eveniet, praesentium itaque? Quis, aut.</p>
+                <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 </body>
 </html>

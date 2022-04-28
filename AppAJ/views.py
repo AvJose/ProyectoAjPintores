@@ -21,3 +21,6 @@ def nosotros (req):
 def contacto (req):
 
     return render (req, 'AppAJ/contacto.html')
+
+def acerca_de_mi (req):
+    return render (req, 'AppAJ/acerca_de_mi.html')

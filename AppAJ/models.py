@@ -27,4 +27,7 @@ class Contacto(models.Model):
 class Admin(models.Model):
     nombre = models.CharField (max_length=40)
     apellido = models.CharField (max_length=40)
+
+    def __str__(self):
+        return self.nombre
     
